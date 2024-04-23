@@ -1,9 +1,26 @@
 
 ## Usage
-Create a new react-native app using this template to speed up the initial project setup.
+- Create a new react-native app using this template to speed up the initial project setup.
 
 ```
-% npx react-native@latest init SomeApp --template https://github.com/jigs611989/react-native-template-gpt.git
+npx react-native@0.73.7 init SomeApp --template https://github.com/jigs611989/react-native-template-gpt.git
+```
+
+- Install Cocoa Pods
+```
+cd SomeApp/
+bundle install
+yarn pod
+```
+
+- Run iOS Application
+```
+yarn ios
+```
+
+- Run Android Application
+```
+yarn android
 ```
 
 ## Tech Stack
@@ -44,18 +61,12 @@ The template also includes basic components like the Button & Input [component l
 - Step 4: Update credentials in ios/sentry.properties and android/sentry.properties
 - Step 3 & Step 4 values can be found on the sentry.io setting page.
 
-## Make sure to upgrade pro guard rules
-In File: proguard-rules.pro make sure to update the package name
-
-# for react-native-config
--keep class <Your BundleName>.BuildConfig { *; }
-
 
 ## Create Your Custom ReactNative Template
 
 Step 1: Create a new project, make sure to keep the name "ProjectName"
 ```
-% npx react-native init ProjectName
+npx react-native init ProjectName
 ```
 
 Step 2: Add packages & modify the project that needs to be included in the template
@@ -91,5 +102,5 @@ git push -u origin main
 
 Step 8: Create a project using the template
 ```
-% npx react-native@latest init SomeApp --template https://github.com/jigs611989/react-native-template-gpt.git
+npx react-native@0.73.7 init SomeApp --template https://github.com/jigs611989/react-native-template-gpt.git
 ```
