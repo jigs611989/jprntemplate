@@ -1,26 +1,22 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeNavigator from './HomeNavigator';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/rootReducer';
+import OnboardingNavigator from './auth/OnboardingNavigator';
 
-function HomeScreen() {
-  React.useEffect(() => {
-    console.log('Hello Home Screen')
-  }, [])
+const RootStack = () => {
+
+  const isAuth = useSelector((state: RootState) => state?.app?.isAuth);
+
+  if (!isAuth) {
+    return (
+      <OnboardingNavigator />
+    );
+  }
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text style={{color: 'black'}}>Home Screen</Text>
-    </View>
-  );
-}
-
-const Stack = createNativeStackNavigator();
-
-function RootStack() {
-  return (
-    <Stack.Navigator initialRouteName='Home'>
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
+    <HomeNavigator />
   );
 }
 
