@@ -2,7 +2,7 @@
   "name": "react-native-template-gpt",
   "version": "0.0.1",
   "description": "React Native Template",
-  "repository": "git@github.com:jigs611989/react-native-template-gpt.git",
+  "repository": "https://github.com/jigs611989/react-native-template-gpt",
   "author": "Jignesh Patel<jigs.patelit@gmail.com>",
   "license": "MIT"
 }
