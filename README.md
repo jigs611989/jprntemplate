@@ -3,7 +3,11 @@
 - Create a new react-native app using this template to speed up the initial project setup.
 
 ```
-npx react-native@0.73.7 init SomeApp --template https://github.com/jigs611989/react-native-template-gpt.git
+npx react-native@0.73.7 init SomeApp --template https://github.com/OXIT-LLC/react-native-template-gpt.git
+```
+
+```
+bundle install
 ```
 
 - Install Cocoa Pods
@@ -42,12 +46,12 @@ The following dependencies will be installed. Make sure to update some required 
 | Device Info       | Utility              | v10     | Device Information for React Native.           |
 | Fast Image        | Image Cache          | v8      | FastImage is an Image replacement              |
 | sentry            | Remote Debugging     | v5      | Crash logs, Remote logs, etc                   |
+| react-native-splash-screen  |   Mobile App Splash Screen   | v3      | Display Splash screen when app launch |
 
 
 The template also includes basic components like the Button & Input [component library](./docs/boilerplate/app/components/Components.md)
 
 // TODO:
-- Add Splash Screen & AppIcon
 - Update Theme (add light & dark mode)
 - Add Localization
 - Update Documentation
